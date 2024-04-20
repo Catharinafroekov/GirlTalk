@@ -1,0 +1,96 @@
+---
+import "../style/style.css";
+---
+
+<article class="header_desk">
+    <h1> Mød de frivillige!</h1>
+    <div class="h_boxcontainer">
+    <div class="h_box1"> </div>
+    <div class="h_box2"></div>
+    </div>
+    <div class="grid_1-5-2-5-1">
+    <div class="header_text">
+        <h2>Vi elsker frivillige!</h2>
+        <p class="text_desk">Her hos Girl Talk er vi rigtig mange frivillige, hele...</p>
+        <p class="text_mobile">Her hos Girl Talk er vi rigtig mange frivillige, hele 300</p>
+        <p>Lær 3 af dem bedre at kende</p>
+    </div>
+    <img class="gif300" src="/img/300_gif.gif" alt="GIF med 300 emojier">
+</div>
+</article>
+
+<style>
+.header_desk{
+    position: relative;
+    background-color: var(--power_blue);
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+/*.h_box1{
+    background-color: var(--dreamy_white);
+    width: 100%;
+    height: 75%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}*/
+
+
+h1{
+    grid-column: 1/4;
+    text-align: center;
+    color: var(--dreamy_white);
+    padding-top: 2%;
+    
+}
+
+.grid_1-5-2-5-1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dreamy_white);
+    z-index: 2;
+}
+
+.header_text{
+    padding: 10%;
+}
+
+
+.gif300{
+    width: 55%;
+    height: auto;
+    /*grid-column: 4/5;*/
+}
+
+.h_box2{
+   position: absolute;
+   background-color: var(--hug_me_pink);
+   z-index: 1;
+   width: 66.5%;
+   height: 60%;
+   top: 16%; /* Placerer .h_box2 øverst */
+    left: 14.5%; /* Placerer .h_box2 til venstre */
+}
+
+@media (max-width: 850px) {
+  .gif300 {
+    display: none;
+  }
+  .text_desk{
+    display: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .text_mobile{
+    display: none;
+  }
+}
+
+</style>

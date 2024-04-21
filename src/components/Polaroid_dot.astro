@@ -1,0 +1,48 @@
+<article class="polo">
+    <div class="polaroid">
+        <img class="dot" src="/public/dot.svg" alt="">
+        <div class="center-content">
+      <img class="frivillig" src="/public/frederikke.png" alt="" />
+    </div>
+      <h3 class="name">Navn</h3>
+    </div>
+  </article>
+
+  <style>
+     @media screen and (max-width: 600px) {
+  .polo {
+    display: none;
+  }
+}
+    .polaroid {
+  background-color: white;
+  padding: 5px;
+  margin: -20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.frivillig {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+margin: 40px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.polaroid:hover .name {
+  visibility: visible;
+}
+
+.dot {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    width: 8%;
+}
+  </style>

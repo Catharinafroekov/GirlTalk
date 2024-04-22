@@ -1,4 +1,8 @@
-<article class="polo">
+
+  <section class="grid_1-1-1, white">
+  <div class="pink-box">
+    <div>
+    <article class="polo">
     <div class="polaroid">
         <img class="dot" src="/public/dot.svg" alt="">
         <div class="center-content">
@@ -7,22 +11,50 @@
       <h3 class="name">Navn</h3>
     </div>
   </article>
+</div>
+<div>
+  <article class="polo">
+    <div class="polaroid">
+      <img class="dot" src="/public/dot.svg" alt="">
+      <div class="center-content">
+    <img class="frivillig" src="/public/frederikke.png" alt="" />
+  </div>
+    <h3 class="name">Navn</h3>
+  </div>
+</article>
+</div>
+<div>
+<article class="polo">
+  <div class="polaroid">
+    <img class="dot" src="/public/dot.svg" alt="">
+    <div class="center-content">
+  <img class="frivillig" src="/public/frederikke.png" alt="" />
+</div>
+  <h3 class="name">Navn</h3>
+</div>
+</article>
+</div>
+</div>
+</section>
+  
+
 
   <style>
 
     @media screen and (max-width: 600px) {
-      .polo {
+      .polo, .pink-box {
         display: none;
       }
     }
-        .polaroid {
-      width: 30%;
+
+    .white{
       background-color: white;
-      padding: 50px;
-      margin: 50px;
-      padding-bottom: 5px;
-      text-align: center;
+      padding: 5%;
     }
+
+article{
+  max-width: 80%;
+}
     
     .frivillig {
       display: block;
@@ -47,5 +79,31 @@
         margin-bottom: 20px;
         width: 8%;
     }
+
+  .grid_1-1-1 {
+  display: grid;
+  grid-template-columns: (1fr 1fr 1fr);
+  gap: 1rem;
+}
+
+.pink-box {
+  display: flex;
+  background-color: var(--hug_me_pink);
+  gap: 10px;
+  justify-content: center;
+  margin:5%;
+}
+
+.polaroid {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-bottom: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
     </style>
     

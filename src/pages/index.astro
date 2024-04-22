@@ -1,12 +1,14 @@
 ---
 import "../style/style.css";
-
 import Header_card from "../components/Header_card.astro"
 import Chat_knap from "../components/Chat_knap.astro";
 import Footer from "../components/Footer.astro";
 import "../components/Letter.astro";
 import "../components/Polaroid_clips.astro";
 import "../components/Polaroid_dot.astro";
+import PolaroidClips from "../components/Polaroid_clips.astro";
+import Letter from "../components/Letter.astro";
+import "../layout/layout.astro";
 ---
 
 <html lang="en">
@@ -20,13 +22,25 @@ import "../components/Polaroid_dot.astro";
 <title>Mød de frivillige!</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
-		<h3>test</h3>
-		<p>test</p>
 		<Header_card/>
+		<Letter/>
+		<div class="hjerte">
+		<img  src="/img/hjerte_gif.gif" alt="Du er god nok" >
+	</div>
+		<Letter/>
+		
+		<img src="/img/veninde_gif.gif" alt="">
+		<Letter/>
+		
+	
 		<Chat_knap/>
 		<Footer/>
 		
 
 	</body>
+	<style>
+		.letter{
+			margin: 200px;
+		}
+	</style>
 </html>

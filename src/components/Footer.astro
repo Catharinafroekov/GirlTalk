@@ -1,0 +1,113 @@
+---
+import "../style/style.css";
+---
+
+<article class="footer_desk">
+    <div class="mobile_box">
+    <div class="h_boxcontainer">
+    <div class="h_box1"> </div>
+    <div class="h_box2"></div>
+    </div>
+    <div class="img_box">
+        <img class="tiktok_img" src="/img/sh2.jfif" alt="placeholder">
+    </div>
+    </div>
+    <h1>HOP IND PÅ VORES TIKTOK FOR AT FØLGE MED</h1>
+</article>
+
+<style>
+.footer_desk{
+    position: relative;
+    background-color: var(--power_blue);
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    
+}
+
+
+h1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    color: var(--dreamy_white);
+    padding-top: 2%;
+    
+}
+
+
+.img_box{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.mobile_box{
+    position: relative;
+}
+
+
+.tiktok_img{
+    width: 55%;
+    height: auto;
+    z-index: 2;
+   position: relative;
+}
+
+.h_boxcontainer {
+    position: relative; 
+}
+
+.h_box2{
+   position: absolute;
+   background-color: var(--hug_me_pink);
+   z-index: 1;
+   width: 300%;
+   height: 300%;
+   top: 80%;
+    left: 170%;
+}
+
+@media (max-width: 850px) {
+    .footer_desk{
+    position: relative;
+    background-color: var(--power_blue);
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.h_box2 {
+        width: 10%; /* Ændrer bredden */
+        height: 100px; /* Ændrer højden */
+        background-color: var(--hug_me_pink); /* Ændrer farven */
+        z-index: 0; /* Sørg for, at den er bag billedet */
+        left: 10%;
+        margin-top: -2%;
+    }
+
+    h1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    color: var(--dreamy_white);
+    padding: 3%;
+    
+}
+
+.img_box{
+    margin: 5%;
+}
+
+}
+@media (min-width: 850px) {
+  .mobile_box{
+    display: none;
+  }
+}
+</style>

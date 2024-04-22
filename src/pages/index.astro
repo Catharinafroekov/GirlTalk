@@ -8,7 +8,6 @@ import "../components/Polaroid_clips.astro";
 import "../components/Polaroid_dot.astro";
 import PolaroidClips from "../components/Polaroid_clips.astro";
 import Letter from "../components/Letter.astro";
-import "../layout/layout.astro";
 ---
 
 <html lang="en">
@@ -17,6 +16,7 @@ import "../layout/layout.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href="https://use.typekit.net/fdn8esl.css">
 		<link rel="stylesheet" href="https://use.typekit.net/fdn8esl.css">
+		
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 <title>Mød de frivillige!</title>
@@ -25,11 +25,12 @@ import "../layout/layout.astro";
 		<Header_card/>
 		<Letter/>
 		<div class="hjerte">
-		<img  src="/img/hjerte_gif.gif" alt="Du er god nok" >
+		<img src="/img/hjerte_gif.gif" alt="Du er god nok" >
 	</div>
 		<Letter/>
-		
-		<img src="/img/veninde_gif.gif" alt="">
+		<div class="veninder">
+		<img  src="/img/veninde_gif.gif" alt="">
+	</div>
 		<Letter/>
 		
 	

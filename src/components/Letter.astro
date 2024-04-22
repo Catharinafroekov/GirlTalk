@@ -1,9 +1,17 @@
 <article class="letter">
   <img class="tape top-right" src="/public/tape.png" alt="">
-  <section class="first">
+  <section class="first, grid_1-1" >
+
+    <div class="polaroid">
+      <img class="clips" src="/public/clips.svg" alt="">
+    <img class="frivillig" src="/public/frederikke.png" alt="" />
+    <h3 class="names">Navn</h3>
+  </div>
+<div>
     <p>Alder:</p>
     <p>Kælenavn:</p>
     <p>Skole/Job:</p>
+  </div>
   </section>
   <section class="secound">
     <p>Hvad ville du sige til dit yngre jeg?:</p>
@@ -16,27 +24,7 @@
   <img class="tape bottom-left" src="/public/tape.png" alt="">
 
 </article>
-<article class="billede1">
-  <div class="polaroid">
-      <img class="clips" src="/public/clips.svg" alt="">
-    <img class="frivillig" src="/public/frederikke.png" alt="" />
-    <h3 class="names">Navn</h3>
-  </div>
-</article>
-<article class="billede2">
-  <div class="polaroid">
-      <img class="clips" src="/public/clips.svg" alt="">
-    <img class="frivillig" src="/public/frederikke.png" alt="" />
-    <h3 class="names">Navn</h3>
-  </div>
-</article>
-<article class="billede3">
-  <div class="polaroid">
-      <img class="clips" src="/public/clips.svg" alt="">
-    <img class="frivillig" src="/public/frederikke.png" alt="" />
-    <h3 class="names">Navn</h3>
-  </div>
-</article>
+
 
 <style>
    body {
@@ -45,6 +33,11 @@
       z-index: 1;
     }
     
+    .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
     article.letter {
    
   position: relative;
@@ -137,27 +130,25 @@ padding-bottom: 60px;
   bottom: 10px;
   left: -70px;
 }
-
+.polaroid img{
+  position: relative;
+top: 10%;
+}
     }
 
-    article.billede1{
-    max-width: 15%;
-    z-index: 4;
-    display: fixed;
-position: absolute;
-top: 92%;
-left: 23%;
-transform: rotate(-5deg);
-}
     .polaroid {
   position: relative; 
   background-color: #FBFAF8;
   filter: drop-shadow(8px 12px 8px rgb(218, 216, 216));
   padding: 10px;
-  margin: -20px;
+  margin: 0px;
   padding-bottom: 5px;
   text-align: center;
-  max-width: 200%;
+  max-width: 50%;
+    z-index: 4;
+top: -30%;
+left: 8%;
+transform: rotate(-5deg);
 }
 
 .frivillig {
@@ -182,88 +173,6 @@ transform: rotate(-5deg);
   z-index: 3;
 }
 
-article.billede2{
-    max-width: 15%;
-    z-index: 4;
-    display: fixed;
-position: absolute;
-top: 486%;
-left: 23%;
-transform: rotate(-5deg);
-}
-    .polaroid {
-  position: relative; 
-  background-color: #FBFAF8;
-  filter: drop-shadow(8px 12px 8px rgb(218, 216, 216));
-  padding: 10px;
-  margin: -20px;
-  padding-bottom: 5px;
-  text-align: center;
-  max-width: 200%;
-}
-
-.frivillig {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.names {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0 10px;
-  text-align: center;
-}
-
-.clips {
-    display: flex;
-  position: absolute; 
-  top: -45px;
-  width: 6%;
-  justify-content: flex-end;
-  z-index: 3;
-}
-article.billede3{
-    max-width: 15%;
-    z-index: 4;
-    display: fixed;
-position: absolute;
-top: 714%;
-left: 23%;
-transform: rotate(-5deg);
-}
-    .polaroid {
-  position: relative; 
-  background-color: #FBFAF8;
-  filter: drop-shadow(8px 12px 8px rgb(218, 216, 216));
-  padding: 10px;
-  margin: -20px;
-  padding-bottom: 5px;
-  text-align: center;
-  max-width: 200%;
-}
-
-.frivillig {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.names {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0 10px;
-  text-align: center;
-}
-
-.clips {
-    display: flex;
-  position: absolute; 
-  top: -45px;
-  width: 6%;
-  justify-content: flex-end;
-  z-index: 3;
-}
 
 
 </style>

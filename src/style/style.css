@@ -43,6 +43,28 @@ font-family: "archivo";
     font-family: "architects-daughter";
   }
 
+  .hjerte img{
+        width: 50%;
+        height: auto;
+    }
+
+    .hjerte{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .veninder img{
+      width: 100%;
+      height: auto;
+  }
+
+  .veninder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   
   

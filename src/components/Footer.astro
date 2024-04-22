@@ -3,14 +3,12 @@ import "../style/style.css";
 ---
 
 <article class="footer_desk">
-    <div class="mobile_box">
     <div class="h_boxcontainer">
     <div class="h_box1"> </div>
     <div class="h_box2"></div>
     </div>
     <div class="img_box">
         <img class="tiktok_img" src="/img/sh2.jfif" alt="placeholder">
-    </div>
     </div>
     <h1>HOP IND PÅ VORES TIKTOK FOR AT FØLGE MED</h1>
 </article>
@@ -46,10 +44,6 @@ h1{
     grid-row: 2/3;
 }
 
-.mobile_box{
-    position: relative;
-}
-
 
 .tiktok_img{
     width: 55%;
@@ -83,12 +77,11 @@ h1{
 }
 
 .h_box2 {
-        width: 10%; /* Ændrer bredden */
-        height: 100px; /* Ændrer højden */
+        width: 50%; /* Ændrer bredden */
+        height: 550px; /* Ændrer højden */
         background-color: var(--hug_me_pink); /* Ændrer farven */
-        z-index: 0; /* Sørg for, at den er bag billedet */
-        left: 10%;
-        margin-top: -2%;
+        left: 21%; /* Justér placeringen */
+    transform: translateY(-115%); 
     }
 
     h1{
@@ -105,9 +98,103 @@ h1{
 }
 
 }
-@media (min-width: 850px) {
-  .mobile_box{
-    display: none;
+
+@media (max-width: 800px) {
+.h_box2 {
+        width: 50%; /* Ændrer bredden */
+        height: 522px; /* Ændrer højden */
+        background-color: var(--hug_me_pink); /* Ændrer farven */
+        left: 21%; /* Justér placeringen */
+    transform: translateY(-115%); 
+    }
+}
+@media (max-width: 750px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 485px ; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 700px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 455px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 650px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 423px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 600px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 390px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 550px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 355px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 500px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 325px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 450px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 300px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 400px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 270px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
+  }
+}
+
+@media (max-width: 350px) {
+  .h_box2 {
+    width: 50%; /* Beholder den samme bredde */
+    height: 235px; /* Ændrer højden */
+    background-color: var(--hug_me_pink); /* Beholder den samme farve */
+    left: 21%; /* Beholder den samme placering */
+    transform: translateY(-115%); /* Beholder den samme lodrette justering */
   }
 }
 </style>

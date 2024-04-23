@@ -15,7 +15,7 @@
   }
 
   @font-face {
-    font-family: "archivo", sans-serif;
+    font-family: "archivo-variable", sans-serif;
     font-variation-settings: "wdth" 100, "wght" 600;
     src:url();
   }
@@ -38,20 +38,21 @@
   }
 
   h3{
-font-family: "archivo";
+font-family: "archivo-variable";
 text-transform: uppercase;
 color: var(--power_blue);
 font-size: 26px;
 text-align: center;
-font-weight: 4000;
+font-weight: bold;
   }
   h4{
-    font-family: "archivo";
+    font-family: "archivo-variable";
     font-size: 26px;
     text-align: center;
       }
       h5{
-        font-family: "archivo";
+        font-family: "archivo-variable";
+        font-size: 20px;
           }
 
           h6{color: var(--love_red);
@@ -62,6 +63,16 @@ font-weight: 4000;
           }
   p{
     font-family: "architects-daughter";
+    font-size: 20px;
+  }
+
+  @media (max-width: 500px) {
+    span{
+      font-size: 12px;
+    }}
+
+  span{
+    font-size: 20px;
   }
 
   .hjerte img{

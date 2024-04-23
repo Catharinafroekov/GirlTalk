@@ -68,7 +68,7 @@ font-weight: bold;
 
   @media (max-width: 500px) {
     span{
-      font-size: 10px;
+      font-size: 8px;
       color: rgb(99, 99, 99);
     }}
 

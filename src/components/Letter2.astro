@@ -2,10 +2,10 @@
   <img class="tape top-right" src="/public/tape.png" alt="">
   <section class="first, grid_1-1" >
 
+    <img class="clips" src="/public/img/clips.svg" alt="">
     <div class="polaroid">
-      <img class="clips" src="/public/clips.svg" alt="">
     <img class="frivillig" src="/public/frederikke.png" alt="" />
-    <p class="names" id="Esther">Esther</p>
+    <p class="names" id="Ester">Ester</p>
   </div>
 <div>
   <h5>Alder: <span style="font-family:architects-daughter">26 somre</span> </h5>
@@ -106,6 +106,17 @@ transform: rotate(-5deg);
   text-align: center;
 }
 
+.clips {
+    display: flex;
+  position: absolute; 
+  top: 65px;
+  width: 2.5%;
+  height: 20%;
+  left: 140px;
+  justify-content: flex-end;
+  z-index: 5;
+}
+
 }
 
 @media (max-width: 810px){
@@ -130,6 +141,17 @@ transform: rotate(-5deg);
   justify-content: center;
   margin: 20px 0 10px;
   text-align: center;
+}
+
+.clips {
+  display: flex;
+  position: absolute; 
+  top: -166px;
+  width: 6%;
+  height: 20%;
+  left: 38px;
+  justify-content: flex-end;
+  z-index: 5;
 }
 }
     @media (min-width: 810px) {
@@ -187,6 +209,28 @@ h5{
         font-family: "archivo-variable";
         font-size: 27px;
           }
+
+          .clips {
+    display: flex;
+  position: absolute; 
+  top: -70px;
+  width: 2.5%;
+  height: 20%;
+  left: 140px;
+  justify-content: flex-end;
+  z-index: 5;
+}
+
+.clips {
+    display: flex;
+  position: absolute; 
+  top: -70px;
+  width: 2.5%;
+  height: 20%;
+  left: 140px;
+  justify-content: flex-end;
+  z-index: 5;
+}
     }
 
     .polaroid {
@@ -216,14 +260,7 @@ transform: rotate(-5deg);}
   text-align: center;
 }
 
-.clips {
-    display: flex;
-  position: absolute; 
-  top: -45px;
-  width: 6%;
-  justify-content: flex-end;
-  z-index: 3;
-}
+
 
 
 

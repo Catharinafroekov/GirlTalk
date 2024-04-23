@@ -2,8 +2,8 @@
   <img class="tape top-right" src="/public/tape.png" alt="">
   <section class="first, grid_1-1" >
 
+    <img class="clips" src="/public/img/clips.svg" alt="">
     <div class="polaroid">
-      <img class="clips" src="/public/clips.svg" alt="">
     <img class="frivillig" src="/public/frederikke.png" alt="" />
     <p class="names" id="Asta">Asta</p>
   </div>
@@ -113,6 +113,17 @@ transform: rotate(-5deg);
   text-align: center;
 }
 
+.clips {
+    display: flex;
+  position: absolute; 
+  top: -120px;
+  width: 5%;
+  height: 20%;
+  left: 38px;
+  justify-content: flex-end;
+  z-index: 5;
+}
+
 }
 
 @media (max-width: 810px){
@@ -139,11 +150,18 @@ transform: rotate(-5deg);
   text-align: center;
 }
 
+.clips {
+    display: flex;
+  position: absolute; 
+  top: -228px;
+  width: 5%;
+  height: 20%;
+  left: 38px;
+  justify-content: flex-end;
+  z-index: 5;
 }
-  
-  
 
-
+}
     @media (min-width: 810px) {
 
         article.letter {
@@ -199,7 +217,18 @@ h5{
         font-family: "archivo-variable";
         font-size: 27px;
           }
-    }
+
+          .clips {
+    display: flex;
+  position: absolute; 
+  top: -103px;
+  width: 2.5%;
+  height: 20%;
+  left: 140px;
+  justify-content: flex-end;
+  z-index: 5;
+}
+}
 
     .polaroid {
   position: relative; 
@@ -212,7 +241,7 @@ h5{
   max-width: 50%;
 
     z-index: 4;
-top: -1%;
+top: -5%;
 left: 8%;
 transform: rotate(-5deg);
 }
@@ -229,16 +258,6 @@ transform: rotate(-5deg);
   margin: 40px 0 10px;
   text-align: center;
 }
-
-.clips {
-    display: flex;
-  position: absolute; 
-  top: -45px;
-  width: 6%;
-  justify-content: flex-end;
-  z-index: 3;
-}
-
 
 
 </style>

@@ -64,16 +64,18 @@ font-weight: bold;
   p{
     font-family: "architects-daughter";
     font-size: 20px;
-    color: grey;
+    
   }
 
   @media (max-width: 500px) {
     span{
       font-size: 12px;
+      color: rgb(99, 99, 99);
     }}
 
   span{
     font-size: 20px;
+    color: rgb(99, 99, 99);
   }
 
   .hjerte img{

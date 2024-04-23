@@ -1,0 +1,190 @@
+<article class="letter">
+  <img class="tape top-right" src="/public/tape.png" alt="">
+  <section class="first, grid_1-1" >
+
+    <div class="polaroid">
+      <img class="clips" src="/public/clips.svg" alt="">
+    <img class="frivillig" src="/public/frederikke.png" alt="" />
+    <p class="names" id="Asta">Asta</p>
+  </div>
+<div>
+    <h5>Alder: <span style="font-family:architects-daughter">24 år</span> </h5>
+    <h5>Kælenavn: <span style="font-family:architects-daughter">Pasta</span></h5>
+    <h5>Skole/Job: <span style="font-family:architects-daughter">Studere Psykologi</span></h5>
+  </div>
+  </section>
+  <section class="secound">
+    <h5>Hvad ville du sige til dit yngre jeg?: <span style="font-family:architects-daughter">At andre menneskers negative holdninger og meninger er ligegyldige. Og at jeg bare skal have lov til at grine, larme og lege ligeså meget jeg vil, uden at tænke på hvad andre tænker om mig </span></h5>
+    <h5>Fun fact: <span style="font-family:architects-daughter">Jeg har gået til klaver i 10 år, men kan 
+      stadig ikke finde ud af det...</span></h5>
+    <h5>Når jeg er ked af det hjælper det at: <span style="font-family:architects-daughter">snakke med mine forældre eller veninder om hvad der gør mig ked af det. Jeg synes altid det hjælper at snakke med nogle. Også selvom jeg ikke nødvendigvis har så meget lyst til at starte med</span></h5>
+    <h5>3 ting på en øde ø: <span style="font-family:architects-daughter"><li><ol>1. Min kat tulle</ol><ol>
+      2. Mad til Tulle og mig</ol><ol>3. Musik, så jeg kan synge med i al evighed og i fred</ol></li></span></h5>
+    <h5>Guilty pleasure: <span style="font-family:architects-daughter">Jeg elsker at synge karaoke på fuld skrue 
+      når jeg er alene hjemme. Hvilket nok er bedst for alle, for jeg synger elendigt</span></h5>
+    <h5>Det bedste ved at være hos Girl Talk: <span style="font-family:architects-daughter">At jeg er med til at hjælpe en masse skønne piger med små som store problemer og dilemmaer, så de kan få det bedre. </span></h5>
+  </section>
+  <img class="tape bottom-left" src="/public/tape.png" alt="">
+
+</article>
+
+
+<style>
+   body {
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+    }
+    
+    .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+    article.letter {
+   
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 60px;
+  padding: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+    }
+
+    li{
+      list-style: none;
+    }
+    
+    .p {
+      font-weight: bolder;
+    }
+    
+    .first {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+    
+    .secound p {
+      width: calc(100% - 10px);
+      margin-bottom: 25px;
+    }
+
+    .tape {
+  position: absolute;
+  width: 30%; 
+  transform: rotate(45deg); 
+}
+
+.top-right {
+  top: 10px;
+  right: -35px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: -35px;
+}
+
+
+    @media (min-width: 768px) {
+
+        article.letter {
+   
+   position: relative;
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+margin: 70px;
+padding: 100px;
+padding-top: 60px;
+padding-bottom: 60px;
+
+}
+
+      .first {
+        align-items: center;
+        margin-bottom: 40px;
+      }
+    
+      .secound {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; 
+      }
+    
+      .secound p {
+        width: calc(50% -20px);
+      }
+
+      .tape {
+  position: absolute;
+  width: 20%; 
+  transform: rotate(45deg); 
+  padding: 10px;
+}
+
+.top-right {
+  top: 10px;
+  right: -70px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: -70px;
+}
+.polaroid img{
+  position: relative;
+top: 10%;
+}
+
+h5{
+        font-family: "archivo";
+        font-size: 27px;
+          }
+    }
+
+    .polaroid {
+  position: relative; 
+  background-color: #FBFAF8;
+  filter: drop-shadow(8px 12px 8px rgb(218, 216, 216));
+  padding: 10px;
+  margin: 0px;
+  padding-bottom: 5px;
+  text-align: center;
+  max-width: 50%;
+    z-index: 4;
+top: -30%;
+left: 8%;
+transform: rotate(-5deg);
+}
+
+.frivillig {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.names {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 10px;
+  text-align: center;
+}
+
+.clips {
+    display: flex;
+  position: absolute; 
+  top: -45px;
+  width: 6%;
+  justify-content: flex-end;
+  z-index: 3;
+}
+
+
+
+</style>

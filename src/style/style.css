@@ -64,6 +64,7 @@ font-weight: bold;
   p{
     font-family: "architects-daughter";
     font-size: 20px;
+    color: grey;
   }
 
   @media (max-width: 500px) {
